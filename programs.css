@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Poppins',sans-serif;
+}
+
+.programs-heading{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    padding:0 20px;
+}
+
+.programs-heading2{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+#main-program__container{
+    padding: 10px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#main-program__container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  #main-program__container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.program{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: grid;
+    height: 19rem;
+    grid-template-columns: 50% 50%;
+    min-width: 600px;
+    width: 100%;
+}
+
+.left_program_div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left_program_div>h1{
+    font-size: 23px;
+    margin-bottom: 29px;
+}
+
+.right_program_div{
+    position: relative;
+    padding-top: 70%;
+}
+
+.right_program_div>img{
+    border-top-right-radius: 3px;
+    height: 100%;
+    inset: 0;
+    object-fit: cover;
+    object-position: 45%;
+    position: absolute;
+    width: 100%;
+}
+
+.fatloss_btn{
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    padding: 11px 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.fatloss_btn:hover{
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.carousel-btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+}
+
+.carousel-btn>div{
+    position: relative;
+    width: 100%;
+}
+
+#left-c-btn{
+    position: absolute;
+    left: 0;
+}
+
+#right-c-btn{
+    position: absolute;
+    right: 0;
+}
+
+.carousel-btn-controller {
+    background-color: rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 1px;
+    color: white;
+    font-size: 24px;
+    padding: 0 12px;
+}
+
+.carousel-btn-controller:hover{
+    cursor: pointer;
+}
+
+
+/*Second Section */
+
+.second-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.categories{
+    display: flex;
+    overflow-x: scroll;
+    max-width: 700px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    #main-program__container{
+        display: flex;
+        padding: 10px 20px;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+    }
+
+    .program {
+        border-radius: 3px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: auto;
+        min-width: 19rem;
+    }
+
+    .program1{
+        margin-left: 20px;
+    }
+
+    .left_program_div>h1 {
+        font-size: 17px;
+        margin-bottom: 11px;
+        text-align: center;
+    }
+
+    .right_program_div {
+        position: relative;
+        padding-top:100%;
+    }
+
+    .fatloss_btn {
+        border: 1px solid gray;
+        border-radius: 3px;
+        background-color: white;
+        font-family: "Poppins",sans-serif;
+        font-weight: 600;
+        font-size: 10px;
+        margin-bottom: 0;
+        padding: 5px 8px;
+        transition: all 0.2s ease-in-out;
+    }
+
+  }
+  

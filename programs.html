@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="Aksavan" />
+  <meta name="description" content="Start your fitness journey with elite trainers only at Aksavan" />
+  <meta name="keywords" content="Health, weightloss, diet, fitness, trainers, coaches" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4285f4" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Poppins:wght@300;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="styles1.css">
+  <link rel="stylesheet" href="programs.css" />
+
+  <script src="programs.js" defer></script>
+  <script src="index.js" defer></script>
+
+  <title>User Dashboard</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="navbar">
+      <h1 id="brand-name">Aksavan</h1>
+      <!-- <img src="Aksavan-3.png" alt="brand" style="height: 32px" />-->
+      <i class="bi bi-list" onclick="displayMenu()"></i>
+    </nav>
+    <div id="ham-menu" class="ham-menu-class">
+      <a href="index.html" class="ham-menu-links" onclick="displayMenu()">Home</a>
+      <a href="programs.html" class="ham-menu-links">Programs</a>
+      <a href="calculator.html" class="ham-menu-links">Diet</a>
+      <a href="calculator.html" class="ham-menu-links"
+        >Success Stories</a
+      >
+      <a href="calculator.html" class="ham-menu-links"
+      >BMI Calculator</a>
+      <a
+        href="#contact-us"
+        class="ham-menu-links"
+        role="button"
+        onclick="displayMenu()"
+        >Contact Us</a
+      >
+      <a href="calculator.html" class="ham-menu-links"
+        >Terms and Conditions</a
+      >
+      <a href="calculator.html" class="ham-menu-links">Privacy Policy</a>
+    </div>
+  </header>
+
+  <h1 class="programs-heading" >Discover</h1>
+  <section>
+
+    <div style="position: relative;">
+      <div id="main-program__container">
+
+        <div class="program">
+          <div class="left_program_div">
+            <h1>Fat Loss</h1>
+            <button class="fatloss_btn">Explore Program</button>
+          </div>
+          <div class="right_program_div">
+            <img
+              style="object-position: top;"
+              src="https://images.pexels.com/photos/6975488/pexels-photo-6975488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Fat Loss Program">
+          </div>
+        </div>
+
+        <div class="program program1">
+          <div class="left_program_div">
+            <h1>Lean Muscle Build</h1>
+            <button class="fatloss_btn">Explore Program</button>
+          </div>
+          <div class="right_program_div">
+            <img
+              style="object-position:left;"
+              src="https://images.pexels.com/photos/6158773/pexels-photo-6158773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Fat Loss Program">
+          </div>
+        </div>
+
+        <div class="program program1">
+          <div class="left_program_div">
+            <h1>For Students</h1>
+            <button class="fatloss_btn">Explore Program</button>
+          </div>
+          <div class="right_program_div">
+            <img
+              src="https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Fat Loss Program">
+          </div>
+        </div>
+
+      </div>
+
+      <!--<div class="carousel-btn">
+        <div>
+          <button id="left-c-btn" class="carousel-btn-controller">&#8656;</button>
+          <button id="right-c-btn" class="carousel-btn-controller">&#8658;</button>
+        </div>
+      </div>-->
+    </div>
+  </section>
+
+  <br><br><br>
+
+  <section class="second-section">
+    <h1 class="programs-heading2">The only Premium plan you will ever need</h1>
+  </section>
+</body>
+
+</html>
